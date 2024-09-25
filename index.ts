@@ -12,12 +12,13 @@ const persona9 = new Persona("Rolex como", 18);
 const persona10 = new Persona("Si fueran casio", 35);
 
 persona1.saludar()
-persona2.saludar()
-persona3.saludar()
-persona4.saludar()
-persona5.saludar()
-persona6.saludar()
-persona7.saludar()
-persona8.saludar()
-persona9.saludar()
-persona10.saludar()
+// persona2.saludar()
+// persona3.saludar()
+// persona4.saludar()
+// persona5.saludar()
+// persona6.saludar()
+// persona7.saludar()
+// persona8.saludar()
+// persona9.saludar()
+// persona10.saludar()
+console.log('Edad 1 : ', persona1.getEdad());

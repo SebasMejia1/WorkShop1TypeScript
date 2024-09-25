@@ -1,6 +1,6 @@
-class Persona {
+export class Persona {
     nombre: string;
-    edad: number;
+    private edad: number;
 
     constructor(nombre: string, edad: number, ) {
         this.nombre = nombre;
@@ -14,7 +14,8 @@ class Persona {
     getEdad(){
         return this.edad;
     }
-}
-let persona1 = new Persona('Juan', 30);
 
-persona1.saludar(); 
+// let persona1 = new Persona('Juan', 30);
+
+// persona1.saludar(); 
+}
