@@ -40,7 +40,19 @@ export class Empleado extends Persona {
     
 
 }
-// let persona1 = new Empleado("Sebas", 22, 1200000)
 
-// persona1.saludar();
+abstract class Vehiculo {
+    abstract Arrancar(): void
+}
 
+class Coche extends Vehiculo {
+    Arrancar(): void {
+        console.log('El coche esta arrancando');
+    }
+}
+
+class Moto extends Vehiculo {
+    Arrancar(): void {
+        console.log('La moto esta arrancando');
+    }
+}
