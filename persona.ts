@@ -1,14 +1,19 @@
+import { Direccion } from "./interfazDireccion";
+
 export class Persona {
     nombre: string;
     private edad: number;
+    direccion: Direccion;
 
-    constructor(nombre: string, edad: number, ) {
+    constructor(nombre: string, edad: number, direccion: Direccion) {
         this.nombre = nombre;
         this.edad = edad;
+        this.direccion = direccion;
     }
 
     saludar(): void{
         console.log('Tu nombre es : ', this.nombre, "Tu edad es : ", this.edad);
+        console.log('Tu dirección es : ', this.direccion.calle, this.direccion.ciudad);
     }
 
     getEdad(): number {
@@ -20,8 +25,8 @@ export class Persona {
 
 export class Empleado extends Persona {
     salario: number
-    constructor(nombre: string, edad: number, salario: number){
-        super(nombre, edad);
+    constructor(nombre: string, edad: number, salario: number, direccion: Direccion){
+        super(nombre, edad, direccion)
         this.salario = salario;
     }
     trabajar(): void{
@@ -35,7 +40,7 @@ export class Empleado extends Persona {
     
 
 }
-let persona1 = new Empleado("Sebas", 22, 1200000)
+// let persona1 = new Empleado("Sebas", 22, 1200000)
 
-persona1.saludar();
+// persona1.saludar();
 
