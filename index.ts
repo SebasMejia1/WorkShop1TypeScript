@@ -1,6 +1,8 @@
-import { Persona, Empleado} from "./persona";
+import { Persona, Empleado, Coche, Moto} from "./persona";
 
-const persona1 = new Persona("Benito", 20, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"});
+const coche1 = new Coche("ABC123", "Toyota");
+const moto1 = new Moto("XYZ987", "Yamaha");
+const persona1 = new Persona("Benito", 20, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"}, [coche1, moto1]);
 const persona2 = new Persona("Antonio", 15, {calle: "19a", ciudad: "Rionegro", pais: "Colombia"});
 const persona3 = new Persona("Martinez", 2, {calle: "12b", ciudad: "Remedios", pais: "Colombia"});
 const persona4 = new Persona("Ocasio", 5, {calle: "Palma", ciudad: "La ceja", pais: "Colombia"});
@@ -11,7 +13,7 @@ const persona8 = new Persona("Me pongo", 19, {calle: "WallStreet", ciudad: "Honk
 const persona9 = new Persona("Rolex como", 18, {calle: "Bello", ciudad: "Cartagena", pais: "Colombia"});
 const persona10 = new Persona("Si fueran casio", 35, {calle: "Lin", ciudad: "Santa Marta", pais: "Colombia"});
 
-const Empleado1 = new Empleado("Benito", 20, 1200000, {calle: "Central", ciudad: "Apartado", pais: "Colombia"});
+const Empleado1 = new Empleado("Benito", 20, 1200000, {calle: "Central", ciudad: "Apartado", pais: "Colombia"},[coche1,moto1]);
 const Empleado2 = new Empleado("Antonio", 15, 18000000, {calle: "2900", ciudad: "Manizales", pais: "Colombia"});
 const Empleado3 = new Empleado("Martinez", 2, 120300000, {calle: "19as", ciudad: "Cali", pais: "Colombia"});
 const Empleado4 = new Empleado("Ocasio", 5, 190000, {calle: "291", ciudad: "El Retiro", pais: "Colombia"});
@@ -44,4 +46,4 @@ persona7.saludar()
 persona8.saludar()
 persona9.saludar()
 persona10.saludar()
-console.log('Edad 1 : ', persona1.getEdad());
+// console.log('Edad 1 : ', persona1.getEdad());

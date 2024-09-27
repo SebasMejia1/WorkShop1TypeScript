@@ -4,11 +4,13 @@ export class Persona {
     nombre: string;
     private edad: number;
     direccion: Direccion;
+    vehiculos?: Vehiculo[];
 
-    constructor(nombre: string, edad: number, direccion: Direccion) {
+    constructor(nombre: string, edad: number, direccion: Direccion, vehiculos?:Vehiculo[]) {
         this.nombre = nombre;
         this.edad = edad;
         this.direccion = direccion;
+        this.vehiculos = vehiculos;
     }
 
     saludar(): void{
@@ -25,8 +27,8 @@ export class Persona {
 
 export class Empleado extends Persona {
     salario: number
-    constructor(nombre: string, edad: number, salario: number, direccion: Direccion){
-        super(nombre, edad, direccion)
+    constructor(nombre: string, edad: number, salario: number, direccion: Direccion, vehiculo?: Vehiculo[]){
+        super(nombre, edad, direccion, vehiculo)
         this.salario = salario;
     }
     trabajar(): void{
@@ -41,17 +43,25 @@ export class Empleado extends Persona {
 
 }
 
-abstract class Vehiculo {
+export abstract class Vehiculo {
+    placa: string
+    marca: string
+
+    constructor(placa: string, marca: string){
+        this.placa = placa;
+        this.marca = marca;
+    }
+
     abstract Arrancar(): void
 }
 
-class Coche extends Vehiculo {
+export class Coche extends Vehiculo {
     Arrancar(): void {
         console.log('El coche esta arrancando');
     }
 }
 
-class Moto extends Vehiculo {
+export class Moto extends Vehiculo {
     Arrancar(): void {
         console.log('La moto esta arrancando');
     }
