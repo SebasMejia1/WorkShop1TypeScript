@@ -1,0 +1,178 @@
+[
+    {
+      "nombre": "Benito",
+      "edad": 30,
+      "salario": 3000,
+      "direccion": {
+        "calle": "24a",
+        "ciudad": "El Retiro",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "ABC123",
+          "marca": "Toyota"
+        },
+        {
+          "tipo": "Moto",
+          "placa": "XYZ987",
+          "marca": "Yamaha"
+        }
+      ]
+    },
+    {
+      "nombre": "Ana",
+      "edad": 25,
+      "salario": 3500,
+      "direccion": {
+        "calle": "Av. Principal",
+        "ciudad": "Bogotá",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "DEF456",
+          "marca": "Chevrolet"
+        }
+      ]
+    },
+    {
+      "nombre": "Carlos",
+      "edad": 40,
+      "salario": 4000,
+      "direccion": {
+        "calle": "Calle 10",
+        "ciudad": "Medellín",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Moto",
+          "placa": "GHI789",
+          "marca": "Honda"
+        }
+      ]
+    },
+    {
+      "nombre": "Laura",
+      "edad": 32,
+      "salario": 4200,
+      "direccion": {
+        "calle": "Carrera 15",
+        "ciudad": "Cali",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "JKL012",
+          "marca": "Mazda"
+        }
+      ]
+    },
+    {
+      "nombre": "Andrés",
+      "edad": 28,
+      "salario": 3800,
+      "direccion": {
+        "calle": "Calle 5",
+        "ciudad": "Cartagena",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Moto",
+          "placa": "MNO345",
+          "marca": "Suzuki"
+        }
+      ]
+    },
+    {
+      "nombre": "María",
+      "edad": 29,
+      "salario": 3600,
+      "direccion": {
+        "calle": "Carrera 7",
+        "ciudad": "Bucaramanga",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "PQR678",
+          "marca": "Ford"
+        }
+      ]
+    },
+    {
+      "nombre": "José",
+      "edad": 35,
+      "salario": 4100,
+      "direccion": {
+        "calle": "Calle 20",
+        "ciudad": "Manizales",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "STU901",
+          "marca": "Hyundai"
+        }
+      ]
+    },
+    {
+      "nombre": "Paula",
+      "edad": 27,
+      "salario": 3400,
+      "direccion": {
+        "calle": "Av. Los Libertadores",
+        "ciudad": "Pereira",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Moto",
+          "placa": "VWX234",
+          "marca": "Kawasaki"
+        }
+      ]
+    },
+    {
+      "nombre": "Luis",
+      "edad": 33,
+      "salario": 3700,
+      "direccion": {
+        "calle": "Carrera 9",
+        "ciudad": "Santa Marta",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Coche",
+          "placa": "YZA567",
+          "marca": "Renault"
+        }
+      ]
+    },
+    {
+      "nombre": "Camila",
+      "edad": 31,
+      "salario": 3900,
+      "direccion": {
+        "calle": "Calle 15",
+        "ciudad": "Villavicencio",
+        "pais": "Colombia"
+      },
+      "vehiculos": [
+        {
+          "tipo": "Moto",
+          "placa": "BCD890",
+          "marca": "BMW"
+        }
+      ]
+    }
+  ]
+  
