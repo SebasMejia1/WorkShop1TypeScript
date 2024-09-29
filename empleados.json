@@ -1,178 +1,139 @@
 [
     {
-      "nombre": "Benito",
-      "edad": 30,
-      "salario": 3000,
-      "direccion": {
-        "calle": "24a",
-        "ciudad": "El Retiro",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "ABC123",
-          "marca": "Toyota"
+        "nombre": "Carlos García",
+        "edad": 30,
+        "salario": 50000,
+        "direccion": {
+            "calle": "Calle Principal 123",
+            "ciudad": "Ciudad A"
         },
-        {
-          "tipo": "Moto",
-          "placa": "XYZ987",
-          "marca": "Yamaha"
-        }
-      ]
+        "vehiculos": [
+            {
+                "tipo": "Coche",
+                "marca": "Toyota",
+                "modelo": "Corolla"
+            }
+        ]
     },
     {
-      "nombre": "Ana",
-      "edad": 25,
-      "salario": 3500,
-      "direccion": {
-        "calle": "Av. Principal",
-        "ciudad": "Bogotá",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "DEF456",
-          "marca": "Chevrolet"
+        "nombre": "Ana Pérez",
+        "edad": 28,
+        "salario": 52000,
+        "direccion": {
+            "calle": "Avenida Libertad 456",
+            "ciudad": "Ciudad B"
         }
-      ]
     },
     {
-      "nombre": "Carlos",
-      "edad": 40,
-      "salario": 4000,
-      "direccion": {
-        "calle": "Calle 10",
-        "ciudad": "Medellín",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Moto",
-          "placa": "GHI789",
-          "marca": "Honda"
-        }
-      ]
+        "nombre": "José López",
+        "edad": 35,
+        "salario": 60000,
+        "direccion": {
+            "calle": "Calle Secundaria 789",
+            "ciudad": "Ciudad C"
+        },
+        "vehiculos": [
+            {
+                "tipo": "Moto",
+                "marca": "Yamaha",
+                "modelo": "YZF-R3"
+            },
+            {
+                "tipo": "Coche",
+                "marca": "Ford",
+                "modelo": "Focus"
+            }
+        ]
     },
     {
-      "nombre": "Laura",
-      "edad": 32,
-      "salario": 4200,
-      "direccion": {
-        "calle": "Carrera 15",
-        "ciudad": "Cali",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "JKL012",
-          "marca": "Mazda"
+        "nombre": "María González",
+        "edad": 32,
+        "salario": 58000,
+        "direccion": {
+            "calle": "Calle Luna 101",
+            "ciudad": "Ciudad D"
         }
-      ]
     },
     {
-      "nombre": "Andrés",
-      "edad": 28,
-      "salario": 3800,
-      "direccion": {
-        "calle": "Calle 5",
-        "ciudad": "Cartagena",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Moto",
-          "placa": "MNO345",
-          "marca": "Suzuki"
-        }
-      ]
+        "nombre": "Juan Ramírez",
+        "edad": 40,
+        "salario": 62000,
+        "direccion": {
+            "calle": "Avenida Sol 202",
+            "ciudad": "Ciudad E"
+        },
+        "vehiculos": [
+            {
+                "tipo": "Coche",
+                "marca": "Honda",
+                "modelo": "Civic"
+            }
+        ]
     },
     {
-      "nombre": "María",
-      "edad": 29,
-      "salario": 3600,
-      "direccion": {
-        "calle": "Carrera 7",
-        "ciudad": "Bucaramanga",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "PQR678",
-          "marca": "Ford"
+        "nombre": "Lucía Fernández",
+        "edad": 27,
+        "salario": 49000,
+        "direccion": {
+            "calle": "Calle Estrella 303",
+            "ciudad": "Ciudad F"
         }
-      ]
     },
     {
-      "nombre": "José",
-      "edad": 35,
-      "salario": 4100,
-      "direccion": {
-        "calle": "Calle 20",
-        "ciudad": "Manizales",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "STU901",
-          "marca": "Hyundai"
-        }
-      ]
+        "nombre": "Pedro Sánchez",
+        "edad": 29,
+        "salario": 53000,
+        "direccion": {
+            "calle": "Calle Río 404",
+            "ciudad": "Ciudad G"
+        },
+        "vehiculos": [
+            {
+                "tipo": "Moto",
+                "marca": "Suzuki",
+                "modelo": "GSX-R750"
+            }
+        ]
     },
     {
-      "nombre": "Paula",
-      "edad": 27,
-      "salario": 3400,
-      "direccion": {
-        "calle": "Av. Los Libertadores",
-        "ciudad": "Pereira",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Moto",
-          "placa": "VWX234",
-          "marca": "Kawasaki"
-        }
-      ]
+        "nombre": "Laura Méndez",
+        "edad": 34,
+        "salario": 61000,
+        "direccion": {
+            "calle": "Calle Mar 505",
+            "ciudad": "Ciudad H"
+        },
+        "vehiculos": [
+            {
+                "tipo": "Coche",
+                "marca": "BMW",
+                "modelo": "X5"
+            }
+        ]
     },
     {
-      "nombre": "Luis",
-      "edad": 33,
-      "salario": 3700,
-      "direccion": {
-        "calle": "Carrera 9",
-        "ciudad": "Santa Marta",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Coche",
-          "placa": "YZA567",
-          "marca": "Renault"
+        "nombre": "Fernando Ortiz",
+        "edad": 31,
+        "salario": 55000,
+        "direccion": {
+            "calle": "Avenida Montaña 606",
+            "ciudad": "Ciudad I"
         }
-      ]
     },
     {
-      "nombre": "Camila",
-      "edad": 31,
-      "salario": 3900,
-      "direccion": {
-        "calle": "Calle 15",
-        "ciudad": "Villavicencio",
-        "pais": "Colombia"
-      },
-      "vehiculos": [
-        {
-          "tipo": "Moto",
-          "placa": "BCD890",
-          "marca": "BMW"
-        }
-      ]
+        "nombre": "Isabel Herrera",
+        "edad": 36,
+        "salario": 64000,
+        "direccion": {
+            "calle": "Calle Viento 707",
+            "ciudad": "Ciudad J"
+        },
+        "vehiculos": [
+            {
+                "tipo": "Coche",
+                "marca": "Audi",
+                "modelo": "A4"
+            }
+        ]
     }
-  ]
-  
+]

@@ -39,7 +39,6 @@ export class Empleado extends Persona {
         super.saludar();
         console.log('El salario es : ', this.salario);
     }
-    sss
 
 }
 

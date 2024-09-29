@@ -46,4 +46,4 @@ persona7.saludar()
 persona8.saludar()
 persona9.saludar()
 persona10.saludar()
-// console.log('Edad 1 : ', persona1.getEdad());
+
