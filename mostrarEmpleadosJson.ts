@@ -2,7 +2,7 @@ import empleadosData from './empleados.json';
 import { Empleado, Coche, Moto } from './persona'; 
 import { Direccion } from './interfazDireccion';
 
-// Convertir los datos JSON a instancias de Empleado
+
 const empleados: Empleado[] = empleadosData.map((emp: any) => {
     const direccion: Direccion = {
         calle: emp.direccion.calle,
@@ -12,16 +12,15 @@ const empleados: Empleado[] = empleadosData.map((emp: any) => {
 
     const vehiculos = emp.vehiculos?.map((veh: any) => {
         if (veh.tipo === 'Coche') {
-            return new Coche(veh.placa, veh.marca); // Solo pasa placa y marca
+            return new Coche(veh.placa, veh.marca); 
         } else if (veh.tipo === 'Moto') {
-            return new Moto(veh.placa, veh.marca); // Solo pasa placa y marca
+            return new Moto(veh.placa, veh.marca); 
         }
     });
 
     return new Empleado(emp.nombre, emp.edad, emp.salario, direccion, vehiculos);
 });
 
-// Ejemplo de uso
 empleados.forEach(empleado => {
     empleado.saludar();
     if (empleado.vehiculos) {
@@ -34,21 +33,20 @@ empleados.forEach(empleado => {
 function empleadosToJSON(empleados: Empleado[]): string {
     return JSON.stringify(empleados.map(emp => ({
         nombre: emp.nombre,
-        edad: emp.getEdad(), // Usar el método para obtener la edad
+        edad: emp.getEdad(), 
         salario: emp.salario,
         direccion: {
             calle: emp.direccion.calle,
             ciudad: emp.direccion.ciudad,
-            pais: emp.direccion.pais // Asegúrate de que 'pais' esté en tu objeto direccion
+            pais: emp.direccion.pais
         },
         vehiculos: emp.vehiculos?.map(vehiculo => ({
-            tipo: vehiculo instanceof Coche ? 'Coche' : 'Moto', // Determinar el tipo del vehículo
+            tipo: vehiculo instanceof Coche ? 'Coche' : 'Moto', 
             marca: vehiculo.marca,
-            placa: vehiculo.placa // Cambié modelo a placa
+            placa: vehiculo.placa 
         }))
-    }), 2)); // Solo el 2 para la indentación
+    }), 2)); 
 }
 
-// Uso de la función
 const jsonEmpleados = empleadosToJSON(empleados);
 console.log(jsonEmpleados);
