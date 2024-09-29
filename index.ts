@@ -1,8 +1,15 @@
 import { EstadoCivil } from "./enumEstadoCivil";
 import { Persona, Empleado, Coche, Moto} from "./persona";
+import { Proyecto } from "./proyecto";
 
 const coche1 = new Coche("ABC123", "Toyota");
 const moto1 = new Moto("XYZ987", "Yamaha");
+
+const proyecto1 = new Proyecto("Desarrollo de Aplicación", "Crear una aplicación web", new Date('2023-01-01'), new Date('2023-12-31'));
+const proyecto2 = new Proyecto("Mantenimiento de Software", "Actualizar software existente", new Date('2023-06-01'));
+const proyecto3 = new Proyecto("Investigación de Mercado", "Estudio para entender al cliente", new Date('2024-01-01'));
+
+
 const persona1 = new Persona("Benito", 20, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"}, [coche1, moto1], EstadoCivil.Casado);
 const persona2 = new Persona("Antonio", 15, {calle: "19a", ciudad: "Rionegro", pais: "Colombia"},);
 const persona3 = new Persona("Martinez", 2, {calle: "12b", ciudad: "Remedios", pais: "Colombia"});
@@ -24,6 +31,13 @@ const Empleado7 = new Empleado("ey", 12, 1500000, {calle: "199", ciudad: "El Ret
 const Empleado8 = new Empleado("Me pongo", 19, 20300000, {calle: "19ssa", ciudad: "El Retiro", pais: "Colombia"});
 const Empleado9 = new Empleado("Rolex como", 18, 7000000, {calle: "007", ciudad: "El Retiro", pais: "Colombia"});
 const Empleado10 = new Empleado("Si fueran casio", 35, 18000000, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"}  );
+
+
+Empleado1.agregarProyecto(proyecto3);
+Empleado2.agregarProyecto(proyecto2);
+Empleado3.agregarProyecto(proyecto1);
+
+
 
 Empleado1.saludar()
 Empleado2.saludar()
