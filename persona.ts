@@ -1,16 +1,18 @@
 import { Direccion } from "./interfazDireccion";
-
+import { EstadoCivil } from "./enumEstadoCivil";
 export class Persona {
     nombre: string;
     private edad: number;
     direccion: Direccion;
     vehiculos?: Vehiculo[];
+    estadoCivil?: EstadoCivil;
 
-    constructor(nombre: string, edad: number, direccion: Direccion, vehiculos?:Vehiculo[]) {
+    constructor(nombre: string, edad: number, direccion: Direccion, vehiculos?:Vehiculo[], estadoCivil?:EstadoCivil) {
         this.nombre = nombre;
         this.edad = edad;
         this.direccion = direccion;
         this.vehiculos = vehiculos;
+        this.estadoCivil = estadoCivil;
     }
 
     saludar(): void{
@@ -27,8 +29,8 @@ export class Persona {
 
 export class Empleado extends Persona {
     salario: number
-    constructor(nombre: string, edad: number, salario: number, direccion: Direccion, vehiculo?: Vehiculo[]){
-        super(nombre, edad, direccion, vehiculo)
+    constructor(nombre: string, edad: number, salario: number, direccion: Direccion, vehiculo?: Vehiculo[], estadoCivil?: EstadoCivil){
+        super(nombre, edad, direccion, vehiculo, estadoCivil)
         this.salario = salario;
     }
     trabajar(): void{

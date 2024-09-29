@@ -1,9 +1,10 @@
+import { EstadoCivil } from "./enumEstadoCivil";
 import { Persona, Empleado, Coche, Moto} from "./persona";
 
 const coche1 = new Coche("ABC123", "Toyota");
 const moto1 = new Moto("XYZ987", "Yamaha");
-const persona1 = new Persona("Benito", 20, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"}, [coche1, moto1]);
-const persona2 = new Persona("Antonio", 15, {calle: "19a", ciudad: "Rionegro", pais: "Colombia"});
+const persona1 = new Persona("Benito", 20, {calle: "24a", ciudad: "El Retiro", pais: "Colombia"}, [coche1, moto1], EstadoCivil.Casado);
+const persona2 = new Persona("Antonio", 15, {calle: "19a", ciudad: "Rionegro", pais: "Colombia"},);
 const persona3 = new Persona("Martinez", 2, {calle: "12b", ciudad: "Remedios", pais: "Colombia"});
 const persona4 = new Persona("Ocasio", 5, {calle: "Palma", ciudad: "La ceja", pais: "Colombia"});
 const persona5 = new Persona("Directamente", 30, {calle: "La isla", ciudad: "Medellin", pais: "Colombia"});
