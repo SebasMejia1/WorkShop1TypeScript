@@ -2,6 +2,7 @@ import { EstadoCivil } from "./enumEstadoCivil";
 import { Persona, Empleado, Coche, Moto} from "./persona";
 import { Proyecto } from "./proyecto";
 import { Departamento } from "./departamento";
+import { Empresa } from "./empresa";
 const coche1 = new Coche("ABC123", "Toyota");
 const moto1 = new Moto("XYZ987", "Yamaha");
 
@@ -37,6 +38,17 @@ Empleado1.agregarProyecto(proyecto3);
 Empleado2.agregarProyecto(proyecto2);
 Empleado3.agregarProyecto(proyecto1);
 
+
+const empresaXYZ = new Empresa("XYZ Ltda.");
+
+empresaXYZ.agregarEmpleado(Empleado1);
+empresaXYZ.agregarEmpleado(Empleado2);
+
+empresaXYZ.calcularTotalSalarios();
+
+empresaXYZ.eliminarEmpleado("Carlos García");
+
+empresaXYZ.calcularTotalSalarios()
 
 const departamentoDeVentas = new Departamento("Ventas");
 
